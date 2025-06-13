@@ -1,30 +1,101 @@
+# jira
+# Dashboards, Groups, Issues, Projects, Workflows,  Users
 openapi-filter --checkTags \
-  --flags Issues \
-  "Issue search" \
-  Projects \
-  Users \
-  Workflows \
-  "Issue comments" \
-  "Issue Attachments" \
-  Filters \
-  Dashboards \
-  Groups \
-  "Issue fields" \
-  "Issue types" \
-  "Issue type hierarchy" \
+  --flags "Announcement banner" \
+  "Filters" \
   "JQL" \
+  "Issue comments" \
+  "App data policies" \
+  "App migration" \
+  "App properties" \
+  "Application roles" \
+  "Audit records" \
+  "Avatars" \
+  "Classification levels" \
+  "Dynamic modules" \
+  "Filter sharing" \
+  "Group and user picker" \
+  "Issue attachments" \
+  "Issue bulk operations" \
+  "Issue comment properties" \
+  "Issue custom field associations" \
+  "Issue custom field configuration (apps)" \
+  "Issue custom field contexts" \
+  "Issue custom field options" \
+  "Issue custom field options (apps)" \
+  "Issue custom field values (apps)" \
+  "Issue field configurations" \
+  "Issue fields" \
+  "Issue link types" \
+  "Issue links" \
+  "Issue navigator settings" \
+  "Issue notification schemes" \
+  "Issue priorities" \
+  "Issue properties" \
+  "Issue redaction" \
+  "Issue remote links" \
+  "Issue resolutions" \
+  "Issue search" \
+  "Issue security level" \
+  "Issue security scheme" \
+  "Issue security schemes" \
+  "Issue type properties" \
+  "Issue type schemes" \
+  "Issue type screen schemes" \
+  "Issue types" \
+  "Issue votes" \
+  "Issue watchers" \
+  "Issue worklog properties" \
+  "Issue worklogs" \
+  "JQL functions (apps)" \
+  "Jira expressions" \
+  "Jira settings" \
+  "Labels" \
+  "License metrics" \
+  "Myself" \
+  "Permission schemes" \
   "Permissions" \
+  "Plans" \
+  "Priority schemes" \
+  "Project avatars" \
+  "Project categories" \
+  "Project classification levels" \
   "Project components" \
+  "Project email" \
+  "Project features" \
   "Project key and name validation" \
+  "Project permission schemes" \
+  "Project properties" \
+  "Project role actors" \
   "Project roles" \
+  "Project templates" \
   "Project types" \
+  "Project versions" \
+  "Screen schemes" \
+  "Screen tab fields" \
+  "Screen tabs" \
+  "Screens" \
   "Server info" \
+  "Service Registry" \
+  "Status" \
   "Tasks" \
+  "Teams in plan" \
+  "Time tracking" \
+  "UI modifications (apps)" \
   "User properties" \
   "User search" \
+  "Workflow scheme drafts" \
+  "Workflow scheme project associations" \
+  "Workflow schemes" \
+  "Workflow status categories" \
+  "Workflow statuses" \
+  "Workflow transition properties" \
+  "Workflow transition rules" \
   "Webhooks" \
   -- original/jira-latest.json original/jira-latest-filtered.json
 
+# gitlab
+# projects, groups
 openapi-filter --checkTags \
   --flags award_emoji \
   badges \
@@ -135,6 +206,12 @@ openapi-filter --checkTags \
   unleash_api \
   -- original/gitlab-latest.json original/gitlab-latest-filtered.json
 
+# argo-workflow
+openapi-filter --checkTags \
+  --flags Workf \
 
 
+redocly bundle original/jira-latest-filtered.json --remove-unused-components -o original/jira-latest-filtered-redocly.json
+redocly bundle original/gitlab-latest-filtered.json --remove-unused-components -o original/gitlab-latest-filtered-redocly.json
 
+node minified.js
