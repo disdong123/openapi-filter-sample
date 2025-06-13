@@ -4,8 +4,10 @@ const files = [
     'argocd-2.14.2.json',
     'argoworkflow-3.5.4.json',
     'grafana-11.4.0.json',
-    'gitlab-latest-filtered-redocly.json',
-    'jira-latest-filtered-redocly.json',
+    // 'gitlab-latest-filtered-redocly.json',
+    // 'jira-latest-filtered-redocly.json',
+    'jira-latest-cleaned.json',
+    'gitlab-latest-cleaned.json'
 ]
 
 files.forEach(file => {

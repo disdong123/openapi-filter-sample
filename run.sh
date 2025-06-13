@@ -206,12 +206,10 @@ openapi-filter --checkTags \
   unleash_api \
   -- original/gitlab-latest.json original/gitlab-latest-filtered.json
 
-# argo-workflow
-openapi-filter --checkTags \
-  --flags Workf \
-
-
 redocly bundle original/jira-latest-filtered.json --remove-unused-components -o original/jira-latest-filtered-redocly.json
 redocly bundle original/gitlab-latest-filtered.json --remove-unused-components -o original/gitlab-latest-filtered-redocly.json
+
+bash clean.sh original/jira-latest-filtered-redocly.json original/jira-latest-cleaned.json
+bash clean.sh original/gitlab-latest-filtered-redocly.json original/gitlab-latest-cleaned.json
 
 node minified.js
