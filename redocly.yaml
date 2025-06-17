@@ -1,21 +1,57 @@
 decorators:
   remove-unused-components: on
 
-#colorMode:
-#  ignoreDetection: true
-#  modes:
-#    - 'dark'
-#    - 'light'
+colorMode:
+  ignoreDetection: true
+  modes:
+    - 'dark'
+    - 'light'
 
 theme:
   openapi:
     theme:
       colors:
-        primary:
-          main: '#63b3ed'
+        text:
+          primary: '#e2e8f0'       # 본문 텍스트 색상
+          secondary: '#a0aec0'     # 부가 텍스트 색상
       sidebar:
         backgroundColor: '#2d3748'
         textColor: '#e2e8f0'
       rightPanel:
         backgroundColor: '#1a202c'
-        textColor: '#e2e8f0'
+        textColor: '#ffffff'
+      schema:
+        nestedBackground: '#2d3748'  # 스키마 패널 배경색
+        typeNameColor: '#e2e8f0'     # 스키마 타입명 색상
+        typeTitleColor: '#e2e8f0'    # 스키마 제목 색상
+      codeBlock:
+        backgroundColor: '#2d3748'   # 코드 블록 배경색
+      codeSample:
+        backgroundColor: '#2d3748'   # 코드 샘플 배경색
+      typography:
+        code:
+          backgroundColor: '#2d3748' # 인라인 코드 배경색
+          color: '#e2e8f0'           # 인라인 코드 텍스트 색상
+        links:
+          color: '#63b3ed'           # 링크 색상
+#theme:
+#  openapi:
+#    theme:
+#      codeBlock:
+#        backgroundColor: '#2d3748'
+#      colors:
+#        primary:
+#          main: '#2d3748'
+#      sidebar:
+#        backgroundColor: '#2d3748'
+#        textColor: '#e2e8f0'
+#      rightPanel:
+#        backgroundColor: '#1a202c'
+#        textColor: '#e2e8f0'
+#      typography:
+#        code:
+#          backgroundColor: '#2d3748'
+#          color: '#e2e8f0'
+#      fab:
+#        backgroundColor: '#2d3748'
+#        color: '#e2e8f0'
