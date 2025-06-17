@@ -1,2 +1,21 @@
 decorators:
   remove-unused-components: on
+
+#colorMode:
+#  ignoreDetection: true
+#  modes:
+#    - 'dark'
+#    - 'light'
+
+theme:
+  openapi:
+    theme:
+      colors:
+        primary:
+          main: '#63b3ed'
+      sidebar:
+        backgroundColor: '#2d3748'
+        textColor: '#e2e8f0'
+      rightPanel:
+        backgroundColor: '#1a202c'
+        textColor: '#e2e8f0'

@@ -218,4 +218,4 @@ redocly build-docs minified/argoworkflow-3.5.4.json --output=pages/argoworkflow-
 redocly build-docs minified/argocd-2.14.2.json --output=pages/argocd-2.14.2.html
 redocly build-docs minified/gitlab-latest-cleaned.json --output=pages/gitlab-latest.html
 redocly build-docs minified/jira-latest-cleaned.json --output=pages/jira-latest.html
-redocly build-docs minified/grafana-11.4.0.json --output=pages/grafana-11..4.0.html
+redocly build-docs minified/grafana-11.4.0.json --output=pages/grafana-11.4.0.html
