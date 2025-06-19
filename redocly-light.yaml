@@ -1,0 +1,42 @@
+decorators:
+  remove-unused-components: on
+
+colorMode:
+  ignoreDetection: true
+  modes:
+    - 'dark'
+    - 'light'
+
+theme:
+  openapi:
+    theme:
+      typography:
+        fontSize: '14px'
+        lineHeight: '1.5em'
+        fontWeightLight: '300'
+        fontWeightRegular: '400'
+        fontWeightBold: '600'
+        fontFamily: 'Pretendard'
+        smoothing: 'antialiased'
+        optimizeSpeed: true
+        headings:
+          fontFamily: 'Pretendard'
+          fontWeight: '600'
+          lineHeight: '1.6em'
+        code:
+          fontSize: '13px'
+          fontFamily: 'Pretendard'
+          lineHeight: '1.5em'
+          fontWeight: '400'
+          color: '#FFCB6B'           # 인라인 코드 텍스트 색상
+          backgroundColor: '#18181b' # 인라인 코드 배경색
+          wrap: true
+        links:
+          color: '#90CAF9'
+          visited: '#90CAF9'
+          hover: '$64B5F6'
+          textDecoration: 'auto'
+          hoverTextDecoration: 'auto'
+      schema:
+        labelsTextSize: '0.9em'
+        nestingSpacing: '1em'
