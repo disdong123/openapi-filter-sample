@@ -9,6 +9,12 @@ colorMode:
 
 theme:
   openapi:
+    nativeScrollbars: true
+    jsonSampleExpandLevel: 0
+    minCharacterLengthToInitSearch: 3
+    maxDisplayedEnumValues: 4
+    expandSingleSchemaField: false
+    pathInMiddlePanel: false
     theme:
       typography:
         fontSize: '14px'

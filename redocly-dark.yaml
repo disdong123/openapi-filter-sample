@@ -42,7 +42,7 @@ theme:
     minCharacterLengthToInitSearch: 3
     maxDisplayedEnumValues: 4
     expandSingleSchemaField: false
-    pathInMiddlePanel: fals
+    pathInMiddlePanel: false
 #    onlyRequiredInSamples: true,
     theme:
       typography:
