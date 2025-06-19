@@ -44,16 +44,16 @@ theme:
         fontWeightLight: '300'
         fontWeightRegular: '400'
         fontWeightBold: '600'
-        fontFamily: 'Pretendard'
+#        fontFamily: 'Pretendard'
         smoothing: 'antialiased'
         optimizeSpeed: true
         headings:
-          fontFamily: 'Pretendard'
+#          fontFamily: 'Pretendard'
           fontWeight: '600'
           lineHeight: '1.6em'
         code:
           fontSize: '13px'
-          fontFamily: 'Pretendard'
+#          fontFamily: 'Pretendard'
           lineHeight: '1.5em'
           fontWeight: '400'
           color: '#FFCB6B'           # 인라인 코드 텍스트 색상
@@ -104,7 +104,7 @@ theme:
             tabTextColor: '#86efac'
         text:
           primary: '#FFFFFF'
-          secondary: 'rgba(255,255,255,0.7)'
+          secondary: '#FFFFFF'
         border:
           dark: '#ffffff'
           light: 'rgba(0,0,0,0.1)'
@@ -112,12 +112,17 @@ theme:
         backgroundColor: '#2d3748'
         textColor: '#e2e8f0'
       rightPanel:
-        backgroundColor: '#2d3748'
+        backgroundColor: '#252f3f'
         textColor: '#ffffff'
+        servers:
+          overlay:
+            backgroundColor: '#27272a'
+          url:
+            backgroundColor: '#18181b'
       schema:
         nestedBackground: '#2d3748'  # 스키마 패널 배경색
-        typeNameColor: '#e2e8f0'     # 스키마 타입명 색상
-        typeTitleColor: '#e2e8f0'    # 스키마 제목 색상
+        typeNameColor: '#FFFFFF'     # 스키마 타입명 색상
+        typeTitleColor: '#FFFFFF'    # 스키마 제목 색상
         linesColor: '#d8b4fe'
         requireLabelColor: '#f87171'
         labelsTextSize: '0.9em'
